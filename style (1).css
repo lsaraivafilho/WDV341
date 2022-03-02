@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: 20px auto 20px auto;
+  padding: 10px;
+  background-color: #303a52;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-radius: 15px;
+  box-shadow: 15px 15px 15px 15px gray;
+  }
+.holdingcontainer{
+  width: 100%;
+  display: flex;
+  background-img: url("images/background-image.jpg");
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: 100px;
+}
+.internalcontainerL{
+  flex:1;
+  background: #87CEFA ;
+  color: #3f3b3b ;
+  padding: 30px;
+  font-size: 16px;
+  font-family: 'Roboto',sans-serif;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+}
+.internalcontainerM{
+  flex:1;
+  background: #ADD8E6 ;
+  color:#3f3b3b ;
+  padding: 30px;
+  font-size: 16px;
+  font-family: 'Roboto',sans-serif;
+}
+.internalcontainerR{
+  flex:1;
+  background: #87CEEB ;
+  color:#3f3b3b ;
+  padding: 30px;
+  font-size: 16px;
+  font-family: 'Roboto',sans-serif;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+h1{
+  text-align: center;
+}
+p{
+  margin-top: 0.5em;
+
+}
+
+@media screen and (max-width:768px){
+  .holdingcontainer{
+    flex-direction: column;
+  }
+  .internalcontainerL{
+        flex:1;
+        background: #87CEFA;
+        color: #3f3b3b;
+        padding: 30px;
+        font-size: 12px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+      }
+      .internalcontainerM{
+        flex:1;
+        background: #ADD8E6;
+        color:#3f3b3b;
+        padding: 30px;
+        font-size: 12px;
+
+      }
+      .internalcontainerR{
+        flex:1;
+        background: #87CEEB;
+        color:#3f3b3b;
+        padding: 30px;
+        font-size: 12px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0px;
+      }
+}
+@media screen and (max-width: 700px) {
+  .row, .navbar {
+    flex-direction: column;
+  }
+}
+header{
+  font-family:'Hammersmith', sans-serif;
+  text-align: center;
+  padding: 0em;
+  background-color: #87CEEB ;
+  color: #fff;
+  border-radius: 15px;
+}
+
+nav {
+  background: #87CEEB;
+  padding: 5px 20px;
+  border-radius: 15px;
+}
+nav ul{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  list-style: none;
+}
+a{
+  padding: 17px;
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+.img-area{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.single-img{
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px 10px;
+}
+.row{
+  display: flex;
+}
+
+footer{
+  text-align: center;
+  background-color: #4169E1;
+  color:white;
+  padding: 15px;
+  border-radius: 15px;
+}
+.img-for-home{
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+.contact-container{
+  flex:1;
+  background: #95ad99;
+  color:#3f3b3b;
+  padding: 30px;
+  font-size: 15px;
+
+}
+.box-img{
+  border: 3px solid #f0e9e9;
+  padding: 0px;
+  margin: 0px;
+}
+
+.box-img-home{
+  border: 3px solid #95ad99;
+  padding: 5px;
+  margin: 0px;
+}
+ul li{
+      text-decoration:none;
+      letter-spacing: 0.1em;
+  }
+   nav a  {
+   		color: #0000FF;
+   		background-color:#87CEFA;
+   		display: block;
+   		padding: 5px 5px;
+   		font-family: 'Roboto',sans-serif;
+   		border-radius: 7px;
+   		margin: 7px;
+   		width: 120px;
+   		text-align: center;
+   		border: 3px solid #0000CD;
+   		}
+nav a:hover  {
+    color: #0000FF;
+    background-color:#ADD8E6;
+    display: block;
+    font-family: 'Roboto',sans-serif;
+    padding: 5px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 7px;
+    }
+.img {
+  border: 2px;
+  padding: 10px;
+  background-color: #87CEEB;
+  border-radius: 15px;
+
+}

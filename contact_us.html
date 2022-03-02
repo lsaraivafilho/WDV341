@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Created By: Leonardo Saraiva , Date: 05/03/2021-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Happy Hands Daycare" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Daycare, Happy, Hands">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+   .internalcontainerR{
+        flex:1;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+        }
+        .contact-container{
+            flex:2;
+           background-color: #87CEEB;
+        }
+    .internalcontainerL{
+      background-color: #4169E1;
+      color: #fff;
+    }
+    form{
+        display:flex;
+        flex-direction:column;
+        background-color: #4169E1;
+        width: 80%;
+        max-width:800px;
+        padding:1.2em;
+        margin:auto;
+        border: thin solid black;
+        border-radius:10px;
+      }
+    .form-box{
+      display:flex;
+      flex-wrap: wrap;
+      margin-bottom:0.5em;
+    }
+    .form-box label{
+      flex-basis:6em;
+      flex-wrap: wrap;
+      text-align:right;
+      margin-right:0.5em;
+    }
+    .form-box input, textarea{
+      flex:1
+    }
+    .form-box-row{
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content:center;
+    }
+    .form-box-row div{
+      margin:0.5em auto;
+    }
+    .form-box-row div label{
+      margin:0.5em auto;
+    }
+    .form-box row div input{
+      margin-left:1.5em;
+      flex:1;
+    }
+    .flex-buttons{
+      display:flex;
+      justify-content:center;
+    }
+    textarea{
+      width:40%;
+      height:80px;
+    }
+   h1{
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family:'Montserrat', sans-serif;
+    }
+    h2{
+      font-family:'Montserrat', sans-serif;
+    }
+    h3{
+      font-family:'Montserrat', sans-serif;
+    }
+    p{
+      font-family: 'Quicksand', sans-serif;
+      font-size: 15px;
+      color: white;
+    }
+  .top-style{
+         font-family: 'Quicksand', sans-serif;
+         font-size: 25px;
+         text-align: center;
+      color: white;
+        }
+    </style>
+    <title>Happy Hands Daycare</title>
+</head>
+
+<body background="images/background-image.jpg">
+
+<div id="holdingcontainer">
+    <header>
+        <div class="banner">
+            <img class="img" src="images/banner_2.png" alt="banner of the page" title="HHD banner"width="100%" height="80%">
+            <nav>
+                <ul>
+                <a href="/WDV341/HappyHandsDaycare/index.html">Home</a>
+                <a href="/WDV341/HappyHandsDaycare/aboutus.html">About Us</a>
+                <a href="/WDV341/HappyHandsDaycare/accreditation.html">Accreditation</a>
+                <a href="/WDV341/HappyHandsDaycare/schedule.html">Schedule</a>
+                <a href="/WDV341/HappyHandsDaycare/contact_us.html">Contact Us</a>
+            </ul>
+                <ul><p>Happy Hands Daycare Web Page</p></ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="row">
+
+        <div class="holdingcontainer">
+            <div class="internalcontainerL"><h2>Contact Us</h2><br>
+                <img src="images/contact-us.png" alt="Daycare_3" title="Daycare"width="110%" height="90%"/>
+            </div>
+            <div class="contact-container">
+                    <form id="form1" name="form1" action="/WDV341/HappyHandsDaycare/formHandler.php" method="post">
+                        <p>We would like to hear from you</p>
+
+                        <div class="form-box">
+                            <label for="firstname">First Name:</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="First Name">
+                        </div>
+
+                        <div class="form-box">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+                        </div>
+
+                        <div class="form-box">
+                            <label for="emailAddress">Email Address:</label>
+                            <input type="text" name="emailAddress" id="emailAddress" placeholder="username@email.com">
+                        </div>
+
+                        <div class="form-box">
+
+                            <label for="interests">Interests</label>
+                            <select name="interests" id="interests">
+                                <option value="Prices & Packages">Prices & Packages</option>
+                                <option value="Benefits">Benefits</option>
+                                <option value="Customer Support">Customer Support</option>
+                                <option value="Schedule Visitation">Schedule Visitation</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-box">
+                            <label for="inputMessage">Message:</label>
+                            <br>
+                            <textarea name="inputMessage" id="inputMessage" placeholder="Type your message"></textarea>
+                        </div>
+
+                        <div class="flex-button">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+
+                    </form>
+                 </div>
+        </div>
+
+    </div>
+    <footer>
+        <h2>Happy Hands Daycare.</h2>
+        <p>3450 Regency Lane, Carmel, Indiana 62704</p>
+        <p>(317) 555-7414</p>
+        <p class="top-style"><a href= "#top"> Go to Top</a></p>
+    </footer>
+
+</div>
+</body>
+</html>
